@@ -145,13 +145,16 @@ width: 100%;
     99%{ left: 0;}
 }
 #navMenu{
-    margin:0;
-    padding: 0;
+    margin-top:-5px;
+    margin-right:0;
+    padding:0;
+    display: inline-block;
 }
  #navMenu ul{
      margin:0;
      padding: 0;
      line-height: 28px;
+     display: inline-block;
  }
  #navMenu li{
      margin:2px;
@@ -243,13 +246,28 @@ width: 100%;
 }
 .one ul li{
     margin-left: -25px;
+    height: 35px;
 }
 .one ul li a{
     color: silver;
-    text-decoration: none;}
+    text-decoration: none;
+}
 .one ul li a:hover {
     color: #779b34;
 }
 .Zero{margin-left: 140px;
 }
 
+.max-width{ max-width: 1400px;
+margin: auto;}
+
+.one ul{
+    list-style-type: square;
+    color: green;
+}
+
+@media (max-width: 600px) {
+    .menuText {
+        display: none;
+    }
+}
