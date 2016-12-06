@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900"rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css"
     <meta charset="UTF-8">
     <title></title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +20,9 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <script src="js.js"></script>
 </head>
 <body>
    <div class="header-container"></div>
@@ -31,10 +32,11 @@
                 <button class="btn btn-link" type="submit">
                       <span class="fa fa-pencil-square-o" style="font-size:18px;color:silver;"aria-hidden="true"></span>
                     <span class="menuText"> My Wishlist</span>
+
                 </button>
 
                 <button class="btn btn-link" type="submit">
-                      <span class="glyphicon glyphicon-user" ="true"></span>
+                      <span class="glyphicon glyphicon-user" type="true"></span>
                     <span class="menuText"> My Account</span>
                 </button>
 
@@ -43,53 +45,49 @@
                     <span class="menuText"> Shopping Cart</span>
                 </button>
                 <button class="btn btn-link" type="submit">
-                      <span class="menu-icon glyphicon glyphicon-ok"></span> Checkout
+                      <span class="menu-icon glyphicon glyphicon-ok"></span>
+                    <span class="menuText">Checkout</span>
                 </button>
-           <div class="navbar-text pull-right" style="margin: 2px 144px 0 0; ">
+
+           <div class="navigation-text pull-right">
               Welcome visitor you can
                <a href="#"> login </a>
                or
-               <a href="#"> create an account.
-               </a>
+               <a href="#"> create an account.</a>
+                 <div class="dropdown" style="display: inline-block;">
+                   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                       US Dollar
+                   </button>
+                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                       <li><a href="#">Euro</a></li>
+                       <li><a href="#">Pound</a></li>
+                       <li><a href="#">Shekel</a></li>
+                   </ul>
+                 </div>
+                 <div class="dropdown"style="display: inline-block;">
+                   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                       English
+                   </button>
+                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                       <li><a href="#">Spanish</a></li>
+                       <li><a href="#">German</a></li>
+                       <li><a href="#">French</a></li>
+                   </ul>
+                 </div>
 
-
-
-                   <div id="navMenu">
-                       <ul>
-                         <li> <a href="#" style="color: white;">US Dollar</a>
-                            <ul>
-                             <li><a href="#">Euro</a></li>
-                             <li><a href="#">Pound</a></li>
-                             <li><a href="#">Som</a></li>
-                            </ul>
-                          </li>
-                       </ul>
-
-
-
-                     <ul>
-                       <li> <a href="#" style="color: white;" ><img src="GB.png" alt="en" style="height: 18px;margin:-5px 6px -3px -6px;">English</a>
-                         <ul>
-                          <li><a href="#">Spanish</a></li>
-                          <li><a href="#">German</a></li>
-                          <li><a href="#">Chinese</a></li>
-                         </ul>
-                       </li>
-                     </ul>
-                   </div>
                  <br class="clearFloat"/>
 
 
-
-
-           </div>
            </div>
 
-    <div class="logo">
+      </div>
+   </div>
+   <div class="max-width" style="margin-top: 25px;">
+
                <img src="http://www.newsmartwave.net/wordpress/venedor/default/wp-content/themes/venedor/images/logo/logo.png">
 
 
-      <div class="navbar-text pull-right" style="margin: 2px 150px 0 0;">
+        <div class="contact pull-right">
           <div class="container1">
               <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
               + (996) 312 55 55 77</br>
@@ -104,12 +102,14 @@
               </span>
               support@venedor.com</br>
             </div>
-      </div>
-    </div>
-      </div>
-   <div class="container3">
+        </div>
+
+   </div>
+     <div class="max-width">
+
        <nav>
-           <ul>
+
+           <ul class="menu">
                <li><a href="#">FASHION</a></li>
                <li><a href="#">ELECTRONICS</a></li>
                <li><a href="#">GIFTS</a></li>
@@ -118,18 +118,33 @@
                <li><a href="#">MUSIC</a></li>
            </ul>
 
+           <!-- Single button -->
+           <div class="btn-group mini-menu">
+               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   FASHION <span class="caret"></span>
+               </button>
+               <ul class="dropdown-menu">
+                   <li><a href="#">FASHION</a></li>
+                   <li><a href="#">ELECTRONICS</a></li>
+                   <li><a href="#">GIFTS</a></li>
+                   <li><a href="#">BOOKS</a></li>
+                   <li><a href="#">AT HOME</a></li>
+                   <li><a href="#">MUSIC</a></li>
+               </ul>
+           </div>
 
 
 
-           <div class="w3-container pull-right" style="margin: 2px 135px 2px 0">
-               <text>
+
+           <div class="w3-container pull-right">
+
                    <button class="w3-btn w3-border"data-toggle="modal" role="button" aria-hidden="true">
-                                              <span class="glyphicon glyphicon-shopping-cart icon-success"style=";color: white;">
+                       <span class="glyphicon glyphicon-shopping-cart icon-success"style=";color: white;">
 
                                               </span>
                        0 item(s) - $0.00
                    </button>
-               </text>
+
            </div>
 
            <div class="fkbx pull-right">
@@ -143,8 +158,12 @@
                    </button></br>
                </form>
            </div>
+
        </nav>
+
+     </div>
    </div>
+
 </div>
    </nav>
             <div class="slider">

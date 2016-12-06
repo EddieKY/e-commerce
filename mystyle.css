@@ -5,7 +5,7 @@
 }
 .header-banner1{
     border: 1px solid #f5f5f5;
-    padding: 5px 0 5px 160px;
+    padding: 0;
     background-color: #f5f5f5;
 }
 .glyphicon{color:#7bae21;}
@@ -31,11 +31,13 @@
     background-color: #f5f5f5;
     padding: 5px 10px 1px 5px;
 }
+
+
 nav{
 height: 50px;
 }
 nav ul{
-    padding: 0 0 0 150px;
+    padding: 0;
     list-style: none;
 }
 nav ul li a{
@@ -66,11 +68,11 @@ input[type=text] {
 
 .purchase{
 }
-.w3-btn {width:150px;
-background-color: #7bae21;}
-.w3-border {
-    border: 1px solid #7bae21!important;
-    display:inline-block;}
+.w3-btn{width:150px;
+background-color: #7bae21;
+border: 1px solid #7bae21!important;
+display:inline-block;}
+
 .icon-success {
     color: #7bae21;
 }
@@ -144,46 +146,7 @@ width: 100%;
     94%{ left: -100%;}
     99%{ left: 0;}
 }
-#navMenu{
-    margin-top:-5px;
-    margin-right:0;
-    padding:0;
-    display: inline-block;
-}
- #navMenu ul{
-     margin:0;
-     padding: 0;
-     line-height: 28px;
-     display: inline-block;
- }
- #navMenu li{
-     margin:2px;
-     padding: 1px;
-     list-style: none;
-     float: left;
-     position: relative;
-     background: #7bae21;
-     border-radius: 6px;
- }
- #navMenu ul li a{
-     border: 1px solid silver;
-     text-align: center;
-     border-radius: 6px;
-     text-decoration: none;
-     height: 30px;
-     width: 140px;
-     display: block;
-     color: #444645;
-}
- #navMenu ul ul{
-     position: absolute;
-     visibility: hidden;
-     top: 31px;
- }
- #navMenu ul li:hover ul{
-     visibility: visible;
 
- }
  #navMenu li:hover{
      background: #7bae21;
      border-radius: 6px;
@@ -202,6 +165,8 @@ width: 100%;
     display: block;
     background: #f5f5f5;
 }
+
+
 
 .clearFloat{
     clear: both;
@@ -241,8 +206,8 @@ width: 100%;
     display: inline-block;
     margin: 10px;
     padding:0;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 0;
+    margin-top: 0;
 }
 .one ul li{
     margin-left: -25px;
@@ -258,16 +223,27 @@ width: 100%;
 .Zero{margin-left: 140px;
 }
 
-.max-width{ max-width: 1400px;
+.max-width{ max-width: 1200px;
 margin: auto;}
 
 .one ul{
     list-style-type: square;
-    color: green;
+    color: #779b34;
 }
-
-@media (max-width: 600px) {
+.mini-menu{
+    display: none;
+}
+@media screen and (max-width: 600px)
+{
     .menuText {
+        text-align: center;
+        float: none;
         display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .mini-menu{
+        display: block;
     }
 }
